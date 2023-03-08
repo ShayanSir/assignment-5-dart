@@ -1,0 +1,166 @@
+// Question no 01
+// void main() {
+//   Map<String, double> expenses = {
+//     'sun': 3000.0,
+//     'mon': 3000.0,
+//     'tue': 3234.0,
+//   };
+
+//   if (expenses.containsKey('fri')) {
+//     expenses['fri'] = 5000.0;
+//   } else {
+//     expenses['fri'] = 5000.0;
+//   }
+
+//   print(expenses);
+// }
+
+// *------*------*-----*-
+
+// Question no 02
+// import 'dart:math';
+
+// double findArea(double radius) {
+//   return pi * pow(radius, 2);
+// }
+
+// void main() {
+//   double radius = 5.0;
+//   double area = findArea(radius);
+
+//   print('The area of a circle with radius $radius is $area');
+// }
+// *------*------*-------*
+
+
+// Question no 03
+// import 'dart:math';
+
+// double pythagoreanTheorem(double a, double b) {
+//   return sqrt(pow(a, 2) + pow(b, 2));
+// }
+
+// void main() {
+//   double a = 3.0;
+//   double b = 4.0;
+//   double c = pythagoreanTheorem(a, b);
+
+//   print('Given a = $a and b = $b, the value of c is $c');
+// }
+
+// Question no 04
+// void main() {
+//   String originalString = "Google";
+//   String reversedString = reverseString(originalString);
+//   print(reversedString);
+// }
+
+// String reverseString(String str) {
+//   String reversedStr = "";
+//   for (int i = str.length - 1; i >= 0; i--) {
+//     reversedStr += str[i];
+//   }
+//   return reversedStr;
+// }
+// *------*------*-------*
+
+
+
+// Qestion no 05
+// import 'dart:io';
+
+// void main() {
+//   // sign up three users
+//   signUpUser();
+//   signUpUser();
+//   signUpUser();
+
+//   // login with correct credentials
+//   login("shayan@gmail.com", "123456");
+
+//   // login with incorrect credentials
+//   login("shayan@gmail.com", "123456");
+// }
+
+// void signUpUser() {
+//   print("Enter your username:");
+//   String username = stdin.readLineSync()!;
+
+//   print("Enter your email:");
+//   String email = stdin.readLineSync()!;
+
+//   print("Enter your password:");
+//   String password = stdin.readLineSync()!;
+
+//   print("Enter your phone number (optional):");
+//   String? phoneNumber = stdin.readLineSync();
+
+//   Map<String, dynamic> user = {
+//     "username": username,
+//     "email": email,
+//     "password": password,
+//     "phoneNumber": phoneNumber ?? ""
+//   };
+
+//   print("User created successfully!");
+//   print(user);
+// }
+
+// void login(String username, String password) {
+//   // here you would implement your actual authentication logic
+//   // for demonstration purposes, we just check if the username and password match
+//   if (username == "shayan@gmail.com" && password == "123456") {
+//     print("Login successful!");
+//   } else {
+//     print("Incorrect username or password");
+//   }
+// }
+// *------*------*-------*
+
+// Question no 06
+// import 'dart:io';
+
+// void main() {
+//   print("Enter the number: 1");
+//   int number = int.parse(stdin.readLineSync()!);
+
+//   print("Enter the power: 2");
+//   int power = int.parse(stdin.readLineSync()!);
+
+//   int result = calculatePower(number, power);
+//   print("$number raised to the power of $power is $result");
+// }
+
+// int calculatePower(int number, int power) {
+//   int result = 1;
+//   for (int i = 1; i <= power; i++) {
+//     result *= number;
+//   }
+//   return result;
+// }
+// *------*------*-------*
+
+// Question no 07
+// void countVowelsAndConsonants(String str) {
+//   int vowels = 0, consonants = 0;
+  
+//   str = str.toLowerCase();
+  
+//   for(int i=0; i<str.length; i++) {
+//     if(str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u') {
+//       vowels++;
+//     } else if(str[i].contains(new RegExp(r'[a-z]'))) {
+//       consonants++;
+//     }
+//   }
+  
+//   print('Vowels: $vowels, Consonants: $consonants');
+// }
+
+// void main() {
+//   String str = 'Muhammad shayan hussain';
+//   countVowelsAndConsonants(str);
+// }
+
+
+// *------*------*-------*
